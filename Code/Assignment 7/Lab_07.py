@@ -44,10 +44,12 @@ while x == 1: #Functional code loop
     if user_choice == 'a' or user_choice == 'A':
         text = input('Enter a string to encrypt : \n')
         shift = int(input('Enter a shift amount : \n'))
+        print('Original string:', text)
         print('Encrypted string:', encrypt(text, shift), '\n\n')
     elif user_choice == 'b' or user_choice == 'B':
         text = input('Enter a string to decrypt : \n')
         shift = int(input('Enter a shift amount : \n'))
+        print('Original string:', text)
         print('Decrypted string:', decrypt(text, shift), '\n\n')
     elif user_choice == 'c' or user_choice == 'C':
         print('Thank you. Have a nice day!')
